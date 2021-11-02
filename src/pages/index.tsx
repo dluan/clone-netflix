@@ -1,5 +1,13 @@
-import Main from 'components/Main'
+import Header from 'components/Header'
+import ProfileList from 'components/ProfileList'
+import HomeStyle from 'styles/homeStyle'
 
 export default function Home() {
-  return <Main />
+  return (
+    <>
+      <HomeStyle />
+      <Header />
+      <ProfileList />
+    </>
+  )
 }

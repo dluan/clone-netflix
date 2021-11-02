@@ -1,34 +1,17 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import { ChakraProvider } from '@chakra-ui/react'
 import theme from '../styles/theme'
+import Fonts from '../styles/fonts'
+import { ChakraProvider } from '@chakra-ui/react'
 
 function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Esqueleto de projeto Next JS</title>
+        <title>Netflix</title>
         <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/img/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/img/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/img/favicon-16x16.png"
-        />
-        <link
-          rel="mask-icon"
-          href="/img/safari-pinned-tab.svg"
-          color="#5bbad5"
+          rel="shortcut icon"
+          href="https://assets.nflxext.com/ffe/siteui/common/icons/nficon2016.ico"
         />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
@@ -40,6 +23,7 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#06092b" />
       </Head>
       <ChakraProvider theme={theme}>
+        <Fonts />
         <Component {...pageProps} />
       </ChakraProvider>
     </>

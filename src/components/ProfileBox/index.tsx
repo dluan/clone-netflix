@@ -1,3 +1,4 @@
+import NextLink from 'next/link'
 import {
   Box,
   Image,
@@ -16,8 +17,8 @@ const ProfileBox = ({ id, name }: ProfileBoxProps) => (
   <LinkBox
     as={WrapItem}
     _hover={{
-      '&>div div:after': { borderColor: '#e5e5e5' },
-      '&>div a': { color: '#e5e5e5' }
+      '&>div div:after': { borderColor: 'netflix.ice' },
+      '&>div a': { color: 'netflix.ice' }
     }}
   >
     <VStack>
@@ -41,9 +42,11 @@ const ProfileBox = ({ id, name }: ProfileBoxProps) => (
           borderRadius={4}
         />
       </Box>
-      <LinkOverlay href="" fontSize="2.4rem" color="grey">
-        {name}
-      </LinkOverlay>
+      <NextLink href={'/catalog'} passHref>
+        <LinkOverlay fontSize="2.4rem" color="grey">
+          {name}
+        </LinkOverlay>
+      </NextLink>
     </VStack>
   </LinkBox>
 )

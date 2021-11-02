@@ -30,8 +30,8 @@ const ProfileList = () => {
         <LinkBox
           as={WrapItem}
           _hover={{
-            '&>div div': { background: '#e5e5e5' },
-            '&>div a': { color: '#e5e5e5' }
+            '&>div div': { background: 'netflix.ice' },
+            '&>div a': { color: 'netflix.ice' }
           }}
         >
           <VStack>

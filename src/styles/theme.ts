@@ -5,7 +5,8 @@ const theme = extendTheme({
     netflix: {
       red: '#E50914',
       bg: '#141414',
-      ice: '#e5e5e5'
+      ice: '#e5e5e5',
+      aqua: '#54b9c5'
     }
   },
   components: {

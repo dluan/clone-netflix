@@ -1,4 +1,5 @@
 import Header from 'components/Header'
+import RowMovies from 'components/RowMovies'
 import SuperBanner from 'components/SuperBanner'
 
 export default function Catalog() {
@@ -6,6 +7,7 @@ export default function Catalog() {
     <>
       <Header />
       <SuperBanner />
+      <RowMovies />
     </>
   )
 }

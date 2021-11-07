@@ -2,7 +2,11 @@ import NextLink from 'next/link'
 import { Flex, Link } from '@chakra-ui/react'
 import Menu from 'components/Menu'
 
-const Header = () => {
+type HeaderProps = {
+  menuShow?: boolean
+}
+
+const Header = ({ menuShow = false }: HeaderProps) => {
   return (
     <Flex
       as="header"
@@ -25,7 +29,7 @@ const Header = () => {
             _hover={{ textDecoration: 'none' }}
           />
         </NextLink>
-        <Menu />
+        {menuShow && <Menu />}
       </Flex>
     </Flex>
   )

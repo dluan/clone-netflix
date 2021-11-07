@@ -103,7 +103,7 @@ const movies = [
   },
   {
     id: 18,
-    image: 'voce.jpg',
+    image: '/img/carouselitem/voce.jpg',
     title: 'Glowing Stars',
     gender: 'Drama'
   }

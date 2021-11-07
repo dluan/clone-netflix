@@ -6,7 +6,7 @@ type CarouselItemProps = {
 
 const CarouselItem = ({ children }: CarouselItemProps) => {
   return (
-    <Box bg="white" color="black" pos="relative">
+    <Box bg="transparent" color="black" pos="relative" px="2px">
       {children}
     </Box>
   )

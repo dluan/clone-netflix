@@ -53,7 +53,8 @@ const theme = extendTheme({
       body: {
         bg: 'netflix.bg',
         fontFamily:
-          '"Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif'
+          '"Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+        overflowX: 'hidden'
       }
     }
   }

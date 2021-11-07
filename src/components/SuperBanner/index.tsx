@@ -10,6 +10,7 @@ const SuperBanner = () => {
       overflowY="hidden"
       justifyContent="center"
       align="start"
+      mb="-6vw"
     >
       <Image
         src="/img/superbanner/colin.webp"

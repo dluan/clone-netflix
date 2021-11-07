@@ -1,16 +1,19 @@
 import { Box, Heading, LinkBox, LinkOverlay } from '@chakra-ui/react'
 import Carousel from '../Carousel'
 
-const RowMovies = () => {
+type RowMoviesProps = {
+  title: string
+}
+
+const RowMovies = ({ title }: RowMoviesProps) => {
   return (
-    <Box>
-      <LinkBox display="flex" alignItems="end">
+    <Box my="3vw">
+      <LinkBox display="flex" alignItems="end" mb="1.3rem">
         <Heading
           as="h2"
           fontSize="1.4vw"
           color="netflix.ice"
           fontWeight={700}
-          m={0}
           ps={24}
           lineHeight="1.25vw"
           _hover={{
@@ -25,7 +28,7 @@ const RowMovies = () => {
             }
           }}
         >
-          Minhas Lista
+          {title}
         </Heading>
         <LinkOverlay
           color="netflix.aqua"
